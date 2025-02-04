@@ -16,6 +16,7 @@ In the project directory, you can run:
 #### Clone the repository:
 
 `git clone <repository-url>`
+
 `cd <project-folder>`
 
 #### Install dependencies:
@@ -25,6 +26,7 @@ In the project directory, you can run:
 ### Running the Development Server
 
 To start the development server, run:
+
 `yarn dev`
 
 The app will be available at http://localhost:5173 by default.
@@ -32,15 +34,19 @@ The app will be available at http://localhost:5173 by default.
 ### Build for Production
 
 To create a production build, run:
+
 `yarn build`
+
 The output will be in the dist folder.
 
 ### The output will be in the dist folder.
 
 To lint the project:
+
 `yarn lint`
 
 To format the code:
+
 `yarn format`
 
 ## Learn More
