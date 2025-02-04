@@ -16,14 +16,20 @@
 //   );
 // }
 
+import About from "./components/About";
+import Footer from "./components/Footer";
 import Header from "./components/Header/index";
 import Nav from "./components/Nav";
+import Skills from "./components/Skills";
 
 const App = () => {
   return (
     <div>
       <Header />
       <Nav />
+      <About />
+      <Skills />
+      <Footer />
     </div>
   );
 };
