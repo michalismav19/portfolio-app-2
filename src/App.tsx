@@ -17,6 +17,7 @@
 // }
 
 import About from "./components/About";
+import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Header from "./components/Header/index";
 import Nav from "./components/Nav";
@@ -29,6 +30,7 @@ const App = () => {
       <Nav />
       <About />
       <Skills />
+      <Contact />
       <Footer />
     </div>
   );
