@@ -30,7 +30,7 @@
   border: none;
   cursor: pointer;
   font-size: 24px;
-  color: #136ea8;
+  color: var(--color-primary);
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -109,6 +109,10 @@
 /* Media queries for small devices(Mobiles) */
 
 @media screen and (max-width: 600px) {
+  .work__container > div {
+    padding: 2rem 3rem;
+  }
+
   .work__section h3,
   .work_content_title {
     font-size: var(--font-size-md);

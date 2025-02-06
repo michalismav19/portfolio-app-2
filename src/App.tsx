@@ -30,8 +30,8 @@ const App = () => {
       <Header />
       <Nav />
       <About />
-      <Skills />
       <Work />
+      <Skills />
       <Contact />
       <Footer />
     </div>

@@ -24,15 +24,15 @@ const About = () => {
               <GiGraduateCap className='about__icon' />
               <h5>Degree</h5>
               <small>
-                Bsc.(Hons) Software Engneering(UG) <br />
-                <i>University of Kelaniya.</i>
+                Bsc. Department of Management Science and Technology <br />
+                <i>AEUB</i>
               </small>
             </article>
 
             <article className='about__card'>
               <BsBookmarkStar className='about__icon' />
-              <h5>Current GPA</h5>
-              <small>3.13</small>
+              <h5>GPA</h5>
+              <small>7.2</small>
             </article>
 
             <article className='about__card'>
@@ -40,21 +40,22 @@ const About = () => {
               <h5>Domains</h5>
               <small>
                 <ul>
-                  <li>Net Centric</li>
-                  <li>Mobile Applications</li>
+                  <li>Web Programming</li>
+                  <li>Software Engineering</li>
                 </ul>
               </small>
             </article>
           </div>
           <p>
-            I'm a <b>Software Engineering Undergradute</b> at the University of
-            Kelaniya. I'm an enthusiastic and driven Software Engineering
-            student seeking a challenging internship opportunity to apply and
-            expand my technical skills. With a strong academic foundation in
-            software engineering and hands-on experience in various programming
-            languages, I am eager to contribute to innovative projects and learn
-            from experienced professionals in the industry. I am a quick learner
-            who is always ready to face challenges.
+            Experienced <b>Lead Full Stack Software Engineer</b> with a
+            demonstrated history of working in the software engineer with
+            knowledge of complete product lifecycle through requirements,
+            analysis, data modeling, design, development, testing, documentation
+            and delivery of projects. Experienced in HTML, CSS, SCSS,
+            JavaScript, ReactJs, NextJs, Typescript, NodeJs and PHP. Strong
+            engineering professional with a Bachelor's degree focused in
+            Department of Management Science and Technology from Athens
+            University of Economics and Business.
           </p>
         </div>
       </div>

@@ -20,6 +20,9 @@ const Footer = () => {
         <li>
           <a href='#skills'>Skills</a>
         </li>
+        <li>
+          <a href='#work'>Work</a>
+        </li>
       </ul>
 
       <div className='footer__socials'>

@@ -26,16 +26,16 @@ const Nav = () => {
         <BiUser />
       </a>
       <a
-        href='#experience'
-        onClick={() => setActiveNav("#experience")}
-        className={activeNav === "#experience" ? "active" : ""}
+        href='#work'
+        onClick={() => setActiveNav("#work")}
+        className={activeNav === "#work" ? "active" : ""}
       >
         <FaLaptopCode />
       </a>
       <a
-        href='#myprojects'
-        onClick={() => setActiveNav("#myprojects")}
-        className={activeNav === "#myprojects" ? "active" : ""}
+        href='#skills'
+        onClick={() => setActiveNav("#skills")}
+        className={activeNav === "#skills" ? "active" : ""}
       >
         <GoChecklist />
       </a>
