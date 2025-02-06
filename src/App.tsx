@@ -22,6 +22,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header/index";
 import Nav from "./components/Nav";
 import Skills from "./components/Skills";
+import Work from "./components/Work";
 
 const App = () => {
   return (
@@ -30,6 +31,7 @@ const App = () => {
       <Nav />
       <About />
       <Skills />
+      <Work />
       <Contact />
       <Footer />
     </div>

@@ -9,18 +9,18 @@ import {
 
 const Skills = () => {
   return (
-    <section id='experience'>
+    <section id='skills'>
       <h5>The skills I have</h5>
-      <h2>My Experience</h2>
+      <h2>My Skills</h2>
 
-      <div className='container experience__container'>
-        <div className='experience__frontend'>
+      <div className='container skills__container'>
+        <div className='skills__frontend'>
           <h3>Frontend Development</h3>
 
-          <div className='experience__content'>
-            {frontendSkills.map((skill) => (
-              <article className='experience__details'>
-                <BsFillPatchCheckFill className='experience__details-icon' />
+          <div className='skills__content'>
+            {frontendSkills.map((skill, index) => (
+              <article className='skills__details' key={index}>
+                <BsFillPatchCheckFill className='skills__details-icon' />
                 <div>
                   <h4>{skill.name}</h4>
                   <small className='text-light'>{skill.level}</small>
@@ -31,12 +31,12 @@ const Skills = () => {
         </div>
         {/* End of frontend part */}
 
-        <div className='experience__backend'>
+        <div className='skills__backend'>
           <h3>Backend Development</h3>
-          <div className='experience__content'>
-            {backendSkills.map((skill) => (
-              <article className='experience__details'>
-                <BsFillPatchCheckFill className='experience__details-icon' />
+          <div className='skills__content'>
+            {backendSkills.map((skill, index) => (
+              <article className='skills__details' key={index}>
+                <BsFillPatchCheckFill className='skills__details-icon' />
                 <div>
                   <h4>{skill.name}</h4>
                   <small className='text-light'>{skill.level}</small>
@@ -46,12 +46,12 @@ const Skills = () => {
           </div>
         </div>
 
-        <div className='experience__backend'>
+        <div className='skills__backend'>
           <h3>DevOps Development</h3>
-          <div className='experience__content'>
-            {devOpsSkills.map((skill) => (
-              <article className='experience__details'>
-                <BsFillPatchCheckFill className='experience__details-icon' />
+          <div className='skills__content'>
+            {devOpsSkills.map((skill, index) => (
+              <article className='skills__details' key={index}>
+                <BsFillPatchCheckFill className='skills__details-icon' />
                 <div>
                   <h4>{skill.name}</h4>
                   <small className='text-light'>{skill.level}</small>
@@ -61,12 +61,12 @@ const Skills = () => {
           </div>
         </div>
 
-        <div className='experience__backend'>
+        <div className='skills__backend'>
           <h3>Other Development</h3>
-          <div className='experience__content'>
-            {otherSkills.map((skill) => (
-              <article className='experience__details'>
-                <BsFillPatchCheckFill className='experience__details-icon' />
+          <div className='skills__content'>
+            {otherSkills.map((skill, index) => (
+              <article className='skills__details' key={index}>
+                <BsFillPatchCheckFill className='skills__details-icon' />
                 <div>
                   <h4>{skill.name}</h4>
                   <small className='text-light'>{skill.level}</small>
