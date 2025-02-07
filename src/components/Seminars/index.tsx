@@ -1,7 +1,5 @@
 import React from "react";
 import "../../App.css";
-import "./style.scss";
-// import { BsFillPatchCheckFill } from "react-icons/bs";
 import { seminars } from "../../data/seminars";
 import { FaArrowLeft, FaArrowRight, FaCalendarAlt } from "react-icons/fa";
 import { CgDetailsMore } from "react-icons/cg";
@@ -11,24 +9,24 @@ const Seminar = () => {
 
   const prevSlide = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? seminars.length - 1 : prevIndex - 1,
+      prevIndex === 0 ? seminars.length - 1 : prevIndex - 1
     );
   };
 
   const nextSlide = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex === seminars.length - 1 ? 0 : prevIndex + 1,
+      prevIndex === seminars.length - 1 ? 0 : prevIndex + 1
     );
   };
   return (
-    <section id="work">
+    <section id='work'>
       <h5>The seminars that I have completed</h5>
       <h2>My seminars</h2>
 
-      <div className="container work__container">
-        <div className="carousel">
+      <div className='container work__container'>
+        <div className='carousel'>
           {/* Left Arrow */}
-          <button className="arrow left" onClick={prevSlide}>
+          <button className='arrow left' onClick={prevSlide}>
             <FaArrowLeft />
           </button>
 
@@ -41,22 +39,22 @@ const Seminar = () => {
                 }`}
                 key={index}
               >
-                <div className="chips_container">
-                  <span className="details_chip main_chip" id={seminar.label}>
+                <div className='chips_container'>
+                  <span className='details_chip main_chip' id={seminar.label}>
                     {seminar.label}
                   </span>
                 </div>
                 <h3>{seminar.title}</h3>
-                <span className="container_info">
+                <span className='container_info'>
                   <FaCalendarAlt
-                    className="year_icon"
+                    className='year_icon'
                     display={seminar.year ? "inline" : "none"}
                   />
                   {seminar.year}
                 </span>
-                <span className="container_info">
+                <span className='container_info'>
                   <CgDetailsMore
-                    className="year_icon"
+                    className='year_icon'
                     display={seminar.description ? "inline" : "none"}
                   />
                   {seminar.description}
@@ -66,7 +64,7 @@ const Seminar = () => {
           })}
 
           {/* Right Arrow */}
-          <button className="arrow right" onClick={nextSlide}>
+          <button className='arrow right' onClick={nextSlide}>
             <FaArrowRight />
           </button>
         </div>
