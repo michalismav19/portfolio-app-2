@@ -43,12 +43,11 @@
 .details_chip {
   display: inline-block;
   font-size: 12px;
-  /* font-family: "Nunito-bold"; */
   width: auto;
   padding: 2px 8px;
   border-radius: 15px;
   margin-bottom: 10px;
   margin-left: 10px;
-  color: #4db5ff;
-  border: 2px solid #4db5ff;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
 }

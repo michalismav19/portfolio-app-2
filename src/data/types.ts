@@ -17,3 +17,16 @@ export interface Label {
 export interface Data {
   value: string;
 }
+
+export interface Other {
+  label: string;
+  title: string;
+  year: string;
+  university: string;
+}
+
+export interface Seminars {
+  label: string;
+  title: string;
+  description: string;
+}

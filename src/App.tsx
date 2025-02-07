@@ -21,6 +21,8 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Header from "./components/Header/index";
 import Nav from "./components/Nav";
+import Other from "./components/Other";
+import Seminar from "./components/Seminars";
 import Skills from "./components/Skills";
 import Work from "./components/Work";
 
@@ -32,6 +34,8 @@ const App = () => {
       <About />
       <Work />
       <Skills />
+      <Seminar />
+      <Other />
       <Contact />
       <Footer />
     </div>
