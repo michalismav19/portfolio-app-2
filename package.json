@@ -16,7 +16,7 @@
     "lint": "eslint .",
     "lint:fix": "yarn prettier:fix",
     "preview": "vite preview",
-    "deploy": "npm run build && gh-pages -d dist"
+    "deploy": "yarn build && gh-pages -d dist"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
