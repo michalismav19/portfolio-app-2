@@ -1,0 +1,19 @@
+.container_info {
+  display: block;
+}
+
+.main_chip {
+  margin-left: 0;
+}
+
+.year_icon {
+  margin-top: 6px;
+  margin-right: 10px;
+  color: var(--color-primary);
+}
+
+@media screen and (max-width: 600px) {
+  .container_info {
+    font-size: var(--font-size-md);
+  }
+}
