@@ -1,34 +1,39 @@
-// import React from "react";
+import React from "react";
 import "./style.css";
 import { MdOutlineEmail } from "react-icons/md";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { useForm } from "react-hook-form";
 
-const Contacts = () => {
+type FormData = {
+  name: string;
+  email: string;
+  message: string;
+};
+
+const Contacts: React.FC = () => {
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors, isSubmitting },
+  } = useForm<FormData>();
+
   const form = useRef<HTMLFormElement>(null);
 
-  const sendEmail = (e: React.FormEvent) => {
-    e.preventDefault();
+  const onSubmit = async (data: FormData) => {
+    try {
+      const serviceId = "service_9qqtewu"; // Replace with EmailJS Service ID
+      const templateId = "template_w4f9g7s"; // Replace with EmailJS Template ID
+      const publicKey = "ZRjisdXqRZOpACna_"; // Replace with EmailJS Public Key
 
-    if (!form.current) return;
-
-    emailjs
-      .sendForm(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
-        form.current,
-        "YOUR_PUBLIC_KEY"
-      )
-      .then(
-        (result) => {
-          console.log("Email successfully sent!", result.text);
-          alert("Email sent successfully!");
-        },
-        (error) => {
-          console.error("Email sending failed:", error.text);
-          alert("Failed to send email.");
-        }
-      );
+      await emailjs.send(serviceId, templateId, data, publicKey);
+      alert("Message sent successfully!");
+      reset(); // Reset the form after successful submission
+    } catch (error) {
+      console.error("Error sending email:", error);
+      alert("Failed to send message. Please try again later.");
+    }
   };
 
   return (
@@ -46,23 +51,43 @@ const Contacts = () => {
           </article>
         </div>
 
-        <form ref={form} onSubmit={sendEmail}>
-          <input
-            type='text'
-            name='name'
-            placeholder='Your Full Name'
-            required
-          />{" "}
+        <form ref={form} onSubmit={handleSubmit(onSubmit)}>
+          <div className='form_section'>
+            <input
+              type='text'
+              {...register("name", { required: "Name is required" })}
+              placeholder='Your Full Name'
+              required
+            />{" "}
+            {errors.name && <p className='error'>{errors.name.message}</p>}
+          </div>
           {/* client side validation */}
-          <input type='email' name='email' placeholder='Your Email' required />
-          <textarea
-            name='message'
-            rows={7}
-            placeholder='Your Message'
-            required
-          ></textarea>
-          <button type='submit' className='btn btn-primary'>
-            Send Message
+          <div className='form_section'>
+            <input
+              type='email'
+              {...register("email", { required: "Email is required" })}
+              placeholder='Your Email'
+              required
+            />
+            {errors.email && <p className='error'>{errors.email.message}</p>}
+          </div>
+          <div className='form_section'>
+            <textarea
+              {...register("message", { required: "Message is required" })}
+              rows={7}
+              placeholder='Your Message'
+              required
+            ></textarea>
+            {errors.message && (
+              <p className='error'>{errors.message.message}</p>
+            )}
+          </div>
+          <button
+            type='submit'
+            className='btn btn-primary'
+            disabled={isSubmitting}
+          >
+            {isSubmitting ? "Sending..." : "Send Message"}
           </button>
         </form>
       </div>

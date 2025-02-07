@@ -55,6 +55,26 @@ textarea {
   color: var(--color-white);
 }
 
+.form_section {
+  position: relative;
+}
+
+.error {
+  color: var(--color-error);
+  font-size: 12px;
+}
+
+.error {
+  position: absolute;
+  right: 16px;
+  top: 20px;
+  color: var(--color-error);
+  padding: 5px 8px;
+  border-radius: 2rem;
+  font-size: var(--font-size-xsm);
+  border: 1px solid var(--color-error);
+}
+
 /* Media queries for medium devices(Tablets) */
 
 @media screen and (max-width: 1024px) {
