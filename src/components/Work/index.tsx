@@ -9,14 +9,12 @@ const Work = () => {
   const [currentIndex, setCurrentIndex] = React.useState(0);
 
   const prevSlide = () => {
-    console.log(currentIndex);
     setCurrentIndex((prevIndex) =>
       prevIndex === 0 ? works.length - 1 : prevIndex - 1
     );
   };
 
   const nextSlide = () => {
-    console.log(currentIndex);
     setCurrentIndex((prevIndex) =>
       prevIndex === works.length - 1 ? 0 : prevIndex + 1
     );

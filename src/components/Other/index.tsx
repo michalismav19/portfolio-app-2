@@ -14,14 +14,12 @@ const Other = () => {
   const [currentIndex, setCurrentIndex] = React.useState(0);
 
   const prevSlide = () => {
-    console.log(currentIndex);
     setCurrentIndex((prevIndex) =>
       prevIndex === 0 ? others.length - 1 : prevIndex - 1
     );
   };
 
   const nextSlide = () => {
-    console.log(currentIndex);
     setCurrentIndex((prevIndex) =>
       prevIndex === others.length - 1 ? 0 : prevIndex + 1
     );
@@ -54,11 +52,17 @@ const Other = () => {
                 </div>
                 <h3>{other.title}</h3>
                 <span className='container_info'>
-                  <FaCalendarAlt className='year_icon' />
+                  <FaCalendarAlt
+                    className='year_icon'
+                    display={other.year ? "inline" : "none"}
+                  />
                   {other.year}
                 </span>
                 <span className='container_info'>
-                  <FaUniversity className='year_icon' />
+                  <FaUniversity
+                    className='year_icon'
+                    display={other.university ? "inline" : "none"}
+                  />
                   {other.university}
                 </span>
               </div>

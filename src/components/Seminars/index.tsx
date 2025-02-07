@@ -10,14 +10,12 @@ const Seminar = () => {
   const [currentIndex, setCurrentIndex] = React.useState(0);
 
   const prevSlide = () => {
-    console.log(currentIndex);
     setCurrentIndex((prevIndex) =>
       prevIndex === 0 ? seminars.length - 1 : prevIndex - 1
     );
   };
 
   const nextSlide = () => {
-    console.log(currentIndex);
     setCurrentIndex((prevIndex) =>
       prevIndex === seminars.length - 1 ? 0 : prevIndex + 1
     );
@@ -50,11 +48,17 @@ const Seminar = () => {
                 </div>
                 <h3>{seminar.title}</h3>
                 <span className='container_info'>
-                  <FaCalendarAlt className='year_icon' />
+                  <FaCalendarAlt
+                    className='year_icon'
+                    display={seminar.year ? "inline" : "none"}
+                  />
                   {seminar.year}
                 </span>
                 <span className='container_info'>
-                  <CgDetailsMore className='year_icon' />
+                  <CgDetailsMore
+                    className='year_icon'
+                    display={seminar.description ? "inline" : "none"}
+                  />
                   {seminar.description}
                 </span>
               </div>
