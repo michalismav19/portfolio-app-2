@@ -3,7 +3,8 @@ import "../../App.css";
 import "./style.scss";
 // import { BsFillPatchCheckFill } from "react-icons/bs";
 import { seminars } from "../../data/seminars";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { FaArrowLeft, FaArrowRight, FaCalendarAlt } from "react-icons/fa";
+import { CgDetailsMore } from "react-icons/cg";
 
 const Seminar = () => {
   const [currentIndex, setCurrentIndex] = React.useState(0);
@@ -23,8 +24,8 @@ const Seminar = () => {
   };
   return (
     <section id='work'>
-      <h5>The work work that I have</h5>
-      <h2>My work</h2>
+      <h5>The seminars that I have completed</h5>
+      <h2>My seminars</h2>
 
       <div className='container work__container'>
         <div className='carousel'>
@@ -48,7 +49,14 @@ const Seminar = () => {
                   </span>
                 </div>
                 <h3>{seminar.title}</h3>
-                <span className='other_info'>{seminar.description}</span>
+                <span className='container_info'>
+                  <FaCalendarAlt className='year_icon' />
+                  {seminar.year}
+                </span>
+                <span className='container_info'>
+                  <CgDetailsMore className='year_icon' />
+                  {seminar.description}
+                </span>
               </div>
             );
           })}

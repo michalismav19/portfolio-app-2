@@ -28,5 +28,6 @@ export interface Other {
 export interface Seminars {
   label: string;
   title: string;
+  year: string;
   description: string;
 }

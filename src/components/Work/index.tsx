@@ -23,7 +23,7 @@ const Work = () => {
   };
   return (
     <section id='work'>
-      <h5>The work work that I have</h5>
+      <h5>The work experience that I have</h5>
       <h2>My work</h2>
 
       <div className='container work__container'>
