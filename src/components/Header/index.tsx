@@ -22,19 +22,19 @@ const Header: React.FC = () => {
     delaySpeed: 4000,
   });
   return (
-    <header id='home'>
-      <div className='container header__container'>
+    <header id="home">
+      <div className="container header__container">
         <h5>{introText}</h5>
         <h1>{name}</h1>
-        <h5 className='text-light'>Lead Software Engineering</h5>
+        <h5 className="text-light">Lead Software Engineering</h5>
         <CTA />
         <HeaderSocials />
 
-        <div className='me'>
-          <img src={me} alt='me' />
+        <div className="me">
+          <img src={me} alt="me" />
         </div>
 
-        <a href='#contacts' className='scroll__down'>
+        <a href="#contacts" className="scroll__down">
           Scroll Down
         </a>
       </div>

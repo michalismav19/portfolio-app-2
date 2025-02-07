@@ -3,11 +3,11 @@ import CV from "../../assets/MichalisMavromatakisResume.pdf";
 
 const CTA = () => {
   return (
-    <div className='cta'>
-      <a href={CV} download className='btn'>
+    <div className="cta">
+      <a href={CV} download className="btn">
         Download CV
       </a>
-      <a href='#contacts' className='btn btn-primary'>
+      <a href="#contacts" className="btn btn-primary">
         Contact Me
       </a>
     </div>

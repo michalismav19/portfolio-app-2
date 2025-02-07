@@ -10,24 +10,24 @@ const Work = () => {
 
   const prevSlide = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? works.length - 1 : prevIndex - 1
+      prevIndex === 0 ? works.length - 1 : prevIndex - 1,
     );
   };
 
   const nextSlide = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex === works.length - 1 ? 0 : prevIndex + 1
+      prevIndex === works.length - 1 ? 0 : prevIndex + 1,
     );
   };
   return (
-    <section id='work'>
+    <section id="work">
       <h5>The work experience that I have</h5>
       <h2>My work</h2>
 
-      <div className='container work__container'>
-        <div className='carousel'>
+      <div className="container work__container">
+        <div className="carousel">
           {/* Left Arrow */}
-          <button className='arrow left' onClick={prevSlide}>
+          <button className="arrow left" onClick={prevSlide}>
             <FaArrowLeft />
           </button>
 
@@ -40,22 +40,22 @@ const Work = () => {
                 }`}
                 key={index}
               >
-                <div className='chips_container'>
+                <div className="chips_container">
                   {work.labels.map((label, i) => (
-                    <span className='details_chip' id={label.type} key={i}>
+                    <span className="details_chip" id={label.type} key={i}>
                       {label.value}
                     </span>
                   ))}
                 </div>
                 <h3>{work.description}</h3>
-                <div className='work_content'>
-                  <div className='work_content_title'>
+                <div className="work_content">
+                  <div className="work_content_title">
                     Day to Day Responsibilities:
                   </div>
 
                   {work.data.map((data, i) => (
-                    <div className='work_content_details' key={i}>
-                      <BsFillPatchCheckFill className='work__details-icon' />
+                    <div className="work_content_details" key={i}>
+                      <BsFillPatchCheckFill className="work__details-icon" />
                       <span>{data.value}</span>
                     </div>
                   ))}
@@ -65,7 +65,7 @@ const Work = () => {
           })}
 
           {/* Right Arrow */}
-          <button className='arrow right' onClick={nextSlide}>
+          <button className="arrow right" onClick={nextSlide}>
             <FaArrowRight />
           </button>
         </div>
