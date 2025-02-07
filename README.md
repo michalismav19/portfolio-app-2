@@ -53,9 +53,18 @@ To format the code:
 
 Deploy the project into the gh-pages to update the live site
 
-### `update domain in github gh-pages settings`
+## Deployment
 
-Add the https://michalismavromatakis.com/ domain in Custom domain in gihub/settings/Pages
+### `1. Commit and push changes on portfolio-app branch`
+
+### `2. Open PR from portfolio-app to main branch and merge it`
+
+### `3. Checkout to main branch and run 'yarn deploy'`
+
+### `4. Go to gh-pages settings and add:`
+
+    Add the https://michalismavromatakis.com/ domain in Custom domain in gihub/settings/Pages
+    and CNAME file will be added to gh-pages branch
 
 ## Learn More
 
