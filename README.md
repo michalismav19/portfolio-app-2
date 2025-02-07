@@ -49,6 +49,14 @@ To format the code:
 
 `yarn format`
 
+### `yarn deploy`
+
+Deploy the project into the gh-pages to update the live site
+
+### `update domain in github gh-pages settings`
+
+Add the https://michalismavromatakis.com/ domain in Custom domain in gihub/settings/Pages
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
