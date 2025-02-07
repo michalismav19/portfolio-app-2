@@ -1,7 +1,5 @@
 import React from "react";
 import "../../App.css";
-import "./style.scss";
-// import { BsFillPatchCheckFill } from "react-icons/bs";
 import { seminars } from "../../data/seminars";
 import { FaArrowLeft, FaArrowRight, FaCalendarAlt } from "react-icons/fa";
 import { CgDetailsMore } from "react-icons/cg";
