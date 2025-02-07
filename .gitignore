@@ -12,9 +12,6 @@ dist
 dist-ssr
 *.local
 
-# production
-/build
-
 # vite
 .vite/
 
