@@ -1,5 +1,5 @@
 header {
-  height: 100vh;
+  height: 85vh;
   padding-top: 7rem;
   overflow: hidden;
 }
@@ -65,21 +65,9 @@ header {
   font-size: 0.9rem;
 }
 
-/* Media queries for medium devices(Tablets) */
-
-@media screen and (max-width: 1024px) {
-  header {
-    height: 60vh;
-  }
-}
-
 /* Media queries for small devices(Mobiles) */
 
 @media screen and (max-width: 600px) {
-  header {
-    height: 100vh;
-  }
-
   .me {
     width: 16rem;
     height: 22rem;

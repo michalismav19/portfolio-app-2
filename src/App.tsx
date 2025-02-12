@@ -28,17 +28,19 @@ import Work from "./components/Work";
 
 const App = () => {
   return (
-    <div>
-      <Header />
-      <Nav />
-      <About />
-      <Work />
-      <Skills />
-      <Seminar />
-      <Other />
-      <Contact />
+    <>
+      <div className='main_application_container'>
+        <Header />
+        <Nav />
+        <About />
+        <Work />
+        <Skills />
+        <Seminar />
+        <Other />
+        <Contact />
+      </div>
       <Footer />
-    </div>
+    </>
   );
 };
 
