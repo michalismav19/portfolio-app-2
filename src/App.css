@@ -1,5 +1,4 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
   text-align: center;
 }
@@ -50,4 +49,21 @@
   margin-left: 10px;
   color: var(--color-primary);
   border: 2px solid var(--color-primary);
+}
+
+.main_application_container {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.main_application_container {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+/* Media queries for small laptops */
+@media screen and (max-width: 1280px) {
+  .main_application_container {
+    width: 100%;
+  }
 }

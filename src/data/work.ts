@@ -33,7 +33,7 @@ export const works: Work[] = [
     ],
   },
   {
-    name: "Collelink",
+    name: "Collegelink",
     labels: [
       {
         type: "time_chip",
@@ -41,7 +41,7 @@ export const works: Work[] = [
       },
       {
         type: "collegelink_chip",
-        value: "Collelink",
+        value: "Collegelink",
       },
     ],
     description: "Lead Full Stack Developer (June 2021 - November 2022)",
@@ -98,10 +98,10 @@ export const works: Work[] = [
         value: "DataBase: Oracle DB, SQL",
       },
       {
-        value: "Programs:</b> Visual Studio Code, WebStorm, PhpStorm, DataGrip",
+        value: "Programs: Visual Studio Code, WebStorm, PhpStorm, DataGrip",
       },
       {
-        value: "Tools:</b> GitLab, Linux",
+        value: "Tools: GitLab, Linux",
       },
     ],
   },

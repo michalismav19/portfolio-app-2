@@ -81,6 +81,7 @@
   }
 
   .about__me {
+    display: none;
     width: 50%;
     margin: 2rem auto 4rem;
   }
@@ -94,6 +95,7 @@
 
 @media screen and (max-width: 600px) {
   .about__me {
+    display: none;
     width: 65%;
     margin: 0 auto 3rem;
   }
