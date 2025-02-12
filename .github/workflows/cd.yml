@@ -29,4 +29,4 @@ jobs:
           git config --global user.name "michamav19"
           yarn install
           yarn build
-          yarn deploy
+          yarn deploy --repo https://michalismav19:${{ secrets.GIT_ACCESS_TOKEN }}/michalismav19/portfolio-app-2.git
