@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.css";
+import "./style.scss";
 import { MdOutlineEmail } from "react-icons/md";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
@@ -37,54 +37,54 @@ const Contacts: React.FC = () => {
   };
 
   return (
-    <section id="contacts">
+    <section id='contacts'>
       <h5>Get in touch</h5>
       <h2>Contact Me</h2>
 
-      <div className="container contact__container">
-        <div className="contact__options">
-          <article className="contact__option">
-            <MdOutlineEmail className="contact__option-icon" />
+      <div className='container contact__container'>
+        <div className='contact__options'>
+          <article className='contact__option'>
+            <MdOutlineEmail className='contact__option-icon' />
             <h4>Email</h4>
             <h5>michamav19@gmail.com</h5>
-            <a href="mailto:michamav19@gmail.com">Send a message</a>
+            <a href='mailto:michamav19@gmail.com'>Send a message</a>
           </article>
         </div>
 
         <form ref={form} onSubmit={handleSubmit(onSubmit)}>
-          <div className="form_section">
+          <div className='form_section'>
             <input
-              type="text"
+              type='text'
               {...register("name", { required: "Name is required" })}
-              placeholder="Your Full Name"
+              placeholder='Your Full Name'
               required
             />{" "}
-            {errors.name && <p className="error">{errors.name.message}</p>}
+            {errors.name && <p className='error'>{errors.name.message}</p>}
           </div>
           {/* client side validation */}
-          <div className="form_section">
+          <div className='form_section'>
             <input
-              type="email"
+              type='email'
               {...register("email", { required: "Email is required" })}
-              placeholder="Your Email"
+              placeholder='Your Email'
               required
             />
-            {errors.email && <p className="error">{errors.email.message}</p>}
+            {errors.email && <p className='error'>{errors.email.message}</p>}
           </div>
-          <div className="form_section">
+          <div className='form_section'>
             <textarea
               {...register("message", { required: "Message is required" })}
               rows={7}
-              placeholder="Your Message"
+              placeholder='Your Message'
               required
             ></textarea>
             {errors.message && (
-              <p className="error">{errors.message.message}</p>
+              <p className='error'>{errors.message.message}</p>
             )}
           </div>
           <button
-            type="submit"
-            className="btn btn-primary"
+            type='submit'
+            className='btn btn-primary'
             disabled={isSubmitting}
           >
             {isSubmitting ? "Sending..." : "Send Message"}
